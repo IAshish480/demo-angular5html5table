@@ -1,6 +1,8 @@
-# TableTestProject
+# Demo-angular5html5table
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2.
+It is a light weight table designed for angular modules.
+To ue download the source code and install node modules and use "ng serve" command.
+
 
 ## Development server
 
