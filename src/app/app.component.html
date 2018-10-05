@@ -1,0 +1,9 @@
+Hello User
+
+<section style="height: 500px;">
+    <angular-table [rowData]="rowData" [leftColumnType]="leftColumnType" [headerRowsArray]="headerRowsArray" 
+    [tableNameFromParent]="'Employee Table'"  [defaultSelectedRow]="'2'" 
+    [idOfTable]="'tableId1'"
+    (onSelectedRows)="onRowSelection($event.value)"
+    (onColumnClicked)="onColumnClicked($event.value)" (onRowValueChange)="onValueChanged($event.value)">
+  </angular-table></section>

@@ -1,11 +1,5 @@
 {
   "compileOnSave": false,
-  "include": [
-    "./src"
-  ],
-  //  "files": [
-  //   "node_modules/angular5html5table/dist/index.d.ts"
-  //  ],
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

@@ -1,8 +1,7 @@
 # Demo-angular5html5table
 
 It is a light weight table designed for angular modules.
-To ue download the source code and install node modules and use "ng serve" command.
-
+To use download the source code and install node modules and use "ng serve" command.
 
 ## Development server
 
