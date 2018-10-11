@@ -27,7 +27,9 @@ export class AppComponent {
         modelId: "String",
         sort: false,
         editable: true,
-        type: ""
+        type: "",
+        columnColor: 'pink', textColor: 'blue',
+        columnHeaderColor: 'lightcyan', textHeaderColor: 'blue',
       }, {
         columnName: "Selection",
         width: "100px",
@@ -44,8 +46,9 @@ export class AppComponent {
         sort: false,
         editable: true,
         type: "time",
+        columnHeaderColor: 'aqua',
       }, {
-        columnName: "DateMaxSet",
+        columnName: "DateMaxSet", textColor: 'blue',
         width: "110px",
         modelId: "DateMaxSet", visible: true,
         sort: false,
@@ -60,8 +63,10 @@ export class AppComponent {
         sort: false,
         editable: true,
         type: "date",
-        setMinDate: true
-      }, { columnName: "Number", width: "100px", modelId: "Number", sort: true, type: "number" },
+        setMinDate: true,
+        columnHeaderColor: 'blueviolet',
+        textHeaderColor: 'antiquewhite',
+      }, { columnName: "Number", width: "100px", columnColor: 'lightgreen', modelId: "Number", sort: true, type: "number" },
       {
         columnName: "CheckBox", width: "100px", modelId: "CheckBox", editable: true,
         sort: false, type: "checkbox"
@@ -84,6 +89,9 @@ export class AppComponent {
       Selection: '',
       CheckBox: true,
       Time: this.getCurrentTime(),
+      colorCellWithModelId: 'Number',
+      colorCell: 'white',
+      textColorCell: 'red'
     }, {
       Number: 2,
       String: 'Kuldeep',
@@ -93,6 +101,9 @@ export class AppComponent {
       Selection: '',
       CheckBox: '',
       Time: this.getCurrentTime(),
+      colorCellWithModelId: 'Number',
+      colorCell: 'lightblue',
+      textColorCell: 'red'
     }, {
       Number: 3,
       String: 'Naresh',
@@ -102,6 +113,9 @@ export class AppComponent {
       Selection: '',
       CheckBox: true,
       Time: this.getCurrentTime(),
+      colorCellWithModelId: 'Number',
+      colorCell: 'yellow',
+      textColorCell: 'red'
     }, {
       Number: 123,
       String: 'Jasmine',
@@ -111,6 +125,11 @@ export class AppComponent {
       Selection: '',
       CheckBox: '',
       Time: this.getCurrentTime(),
+      colorCellWithModelId: 'Number',
+      colorCell: 'lightgrey',
+      textColorCell: 'red',
+      colorRow: 'chartreuse',
+      textColorRow: 'red',
     },
     {
       String: 'Aladdin',
@@ -141,7 +160,7 @@ export class AppComponent {
       dd = '0' + todayDate.getDate();
     var mm = '' + (todayDate.getMonth() + 1);
     if ((todayDate.getMonth() + 1) < 10)
-    mm = '0' + (todayDate.getMonth() + 1);
+      mm = '0' + (todayDate.getMonth() + 1);
 
     return mm + '-' + dd + '-' + todayDate.getFullYear();
   }
@@ -155,7 +174,7 @@ export class AppComponent {
       min = '0' + todayDate.getMinutes();
     var sec = '' + todayDate.getSeconds();
     if (todayDate.getSeconds() < 10)
-    sec = '0' + todayDate.getSeconds();
+      sec = '0' + todayDate.getSeconds();
 
     return hh + ':' + min + ':' + sec;
   }
